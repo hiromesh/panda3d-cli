@@ -6,16 +6,13 @@ A CLI wrapper for [Panda3D](https://www.panda3d.org/) that lets any AI agent (or
 
 Most game engines assume a human sitting in a GUI editor. This tool treats the engine as a platform: a running game process you talk to over a socket, with every operation exposed as a shell command. AI agents, scripts, and CI pipelines can all drive it.
 
-## Requirements
-
-- Python 3.10+
-- panda3d >= 1.10.14
-
 ## Install
 
 ```bash
 pip install panda3d-cli
 ```
+
+> Requires Python 3.10+ and panda3d >= 1.10.14 (installed automatically).
 
 ### AI Skill (optional)
 
