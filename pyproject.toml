@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "panda3d-cli"
+version = "0.1.0"
+description = "CLI tool for operating Panda3D game engine from terminal"
+requires-python = ">=3.10"
+dependencies = [
+    "click>=8.0",
+    "pyyaml>=6.0",
+    "panda3d>=1.10.14",
+]
+
+[project.optional-dependencies]
+train = ["gymnasium>=0.29"]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+p3d = "p3d.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
